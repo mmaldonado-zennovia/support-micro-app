@@ -1,14 +1,12 @@
-import { StyledPageLayout, StyledText } from "@micro/core-components"
-import { StyleSheet } from "react-native"
-
-import { ContactUsWidget } from "../widgets"
+import { StyleSheet, Text, View } from "react-native"
+import { ContactUsWidget } from "../widgets/ContactUsWidget"
 
 export const SupportScreen = () => {
   return (
-    <StyledPageLayout>
-      <StyledText style={styles.title}>Support</StyledText>
+    <View>
+      <Text style={styles.title}>Support</Text>
       <ContactUsWidget />
-    </StyledPageLayout>
+    </View>
   )
 }
 

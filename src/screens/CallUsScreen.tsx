@@ -1,31 +1,28 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Text, View } from "react-native"
 
-import { StyledPageLayout, StyledText } from "@micro/core-components";
-import { useNavigation } from "expo-router";
-import { useEffect } from "react";
+import { useNavigation } from "expo-router"
+import { useEffect } from "react"
 
 export const CallUsScreen = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation()
 
   useEffect(() => {
     navigation.setOptions({
       headerShown: true,
       headerTitle: "Call Us",
       headerBackTitleVisible: false,
-    });
-  }, [navigation]);
+    })
+  }, [navigation])
 
   return (
-    <StyledPageLayout>
-      <StyledText style={styles.title}>
-        All our agents are busy right now
-      </StyledText>
-    </StyledPageLayout>
-  );
-};
+    <View>
+      <Text style={styles.title}>All our agents are busy right now</Text>
+    </View>
+  )
+}
 
 const styles = StyleSheet.create({
   title: {
     textAlign: "center",
   },
-});
+})

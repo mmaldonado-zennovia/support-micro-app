@@ -1,5 +1,5 @@
-import { SupportScreen } from "@micro/support";
+import { SupportScreen } from "../screens"
 
 export default function HomeScreen() {
-  return <SupportScreen />;
+  return <SupportScreen />
 }

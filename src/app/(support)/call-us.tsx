@@ -1,5 +1,5 @@
-import { CallUsScreen } from "@micro/support";
+import { CallUsScreen } from "@/src/screens"
 
 export default function CallUs() {
-  return <CallUsScreen />;
+  return <CallUsScreen />
 }

@@ -1,11 +1,9 @@
-import {
-  StyledIcon,
-  StyledListItem,
-  Widget,
-  microColors,
-} from "@micro/core-components"
 import { useRouter } from "expo-router"
 import { StyleSheet } from "react-native"
+import { Widget } from "./Widget"
+import { StyledListItem } from "../components/StyledListItem"
+import { StyledIcon } from "../components/StyledIcon"
+import { microColors } from "../colors"
 
 export const ContactUsWidget = () => {
   const router = useRouter()
